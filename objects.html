@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Creating and accessing array
+        /*const myobj ={Name: "Arya", Age: 20, Place: "CBE" };
+       console.log(myobj.Name, myobj.Age, "from", myobj.Place);*/
+
+    //Using new keyword
+    /*let cars = new Object();
+    cars.car1 = "Volvo";
+    cars.car2 = "Mini Cooper";
+    cars.car3 = "BMW";
+    cars.car4 = "Benz";
+    console.log(cars)*/
+
+    //Accessing object properties
+    /*console.log(myobj.Name)
+    console.log(myobj["Age"])*/
+
+    //Adding new properties
+    /*myobj.phno = 1234567890;
+    console.log(myobj);*/
+
+    //Deleting properties
+    /*delete myobj.Age;*/
+
+    //nested objects
+   /* myobj = {
+        BloodGrp: "o+ve",
+        Age:25,
+        myfruits: {
+            fru1: "Kiwi",
+            fru2: "Apple",
+            fru3: "Orange",
+            fru4: "Pineapple"
+            
+        }
+        
+    }
+    console.log(myobj.myfruits.fru1)*/
+   /* var person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+for (i in person){
+    console.log(i,person[i])
+}*/
+
+/*var old_price = {"milk":1.02, 
+"coffee":2.5,
+"bread":2.5};
+var dollar_to_pound= 0.76;
+var new_price = {};
+for(i in old_price){
+    new_price[i] = old_price[i] *dollar_to_pound;
+
+    }
+    console.log(new_price)*/
+
+    var orginal_dict = {"jack": 38,
+                        "michael": 48,
+                        "guido":57,
+                        "john":33
+};
+for(i in orginal_dict){
+    if(orginal_dict[i]% 2 == 0){
+    console.log(i,orginal_dict[i]);
+    }
+}
+
+
+
+
+    </script>
+</body>
+</html> 

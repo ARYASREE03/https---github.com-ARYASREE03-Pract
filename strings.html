@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Doble quotes
+        let text ="Aryasree S"
+        console.log(text);
+        //Single quotes
+        let text1 ='aryasree'
+        console.log(text1)
+        //quotes inside  quotes
+        let one =`im from "palakkad" `;
+        //To find lenth
+        let length = one.length;
+        console.log(one)
+        console.log(one.length);
+        //excape character
+        let two= "i like to \"travel\" different places";
+        console.log(two);
+        let three= 'i like to \'travel\' \n different places';
+        console.log(three)
+        let four= " i like to \\travel different places";
+        console.log(four)
+
+        //Extracting String Characters
+        //CharAt
+        let five= "Hey, Im aryasree";
+        let char = five.charAt(5);
+        console.log(char);
+        //charCodeAt
+        let six= "Hey, Im aryasree";
+        let char1 = six.charCodeAt(0);
+        console.log(char1);
+        //at
+        let seven= "Hey, Im aryasree";
+        let char2 = seven.at(8);
+        console.log(char2);
+        //[]
+        let eight= "Hey, Im aryasree";
+        let char3 = eight[2];
+        console.log(char3);
+
+        //slice(start, end)
+        let nine = "kiwi, pine, apple";
+        let part = nine.slice(5, 12);
+        console.log(part);
+        //substring(start, end)
+        let ten = "kiwi, pine, apple";
+        let part1 = ten.substring(3, 10);
+        console.log(part1);
+        //substr(start, length)
+        let eleven = "kiwi,  pine, apple";
+        let part2 = eleven.substr(9);
+        console.log(part2);
+
+        let twelve = "kiwi, pine, apple";
+        let part3 = eleven.substr(-10);
+        console.log(part3);
+
+        //Upper & Lower Case
+        let str= "Aryasree S";
+        let char4 = str.toUpperCase();
+        console.log(char4);
+
+        let str1 ="ARYASREE S";
+        let char5 = str1.toLowerCase();
+        console.log(char5);
+
+        //concat
+        let texts1 ="Arya";
+        let texts2 = "Sree S";
+        let texts3 = texts1.concat(" ", "Sree S");
+        console.log(texts3);
+
+        //Trim
+        let tex1="          Hello World!          ";
+        let tex2= tex1.trim();
+        console.log(tex2);
+        //start
+        let tex3="          Hello World!          ";
+        let tex4= tex1.trimStart();
+        console.log(tex4);
+        //end
+        let tex5="          Hello World!          ";
+        let tex6= tex1.trimEnd();
+        console.log(tex6);
+
+        //JS Padding
+        //String Reapeat
+        //Replace
+        //JS string split
+
+        //JS String Search
+        let text2 = "hey, siri how are you today";
+        let index = text2.indexOf("siri");
+        console.log(index);
+        //lastindexof()
+        let text3 = "hey, siri how are you today";
+        let index1 = text3.lastIndexOf("you");
+        console.log(index1);
+        //string search()
+        let text4 = "hey, siri how are you today";
+        let index2 = text4.search("how");
+        console.log(index2);
+
+        //Match()
+        let text5= "The rain in SPAIN stays mainly in the plain";
+        let myArr = text5.match("ain");
+        console.log(myArr);
+
+        //global search
+        let text6= "The rain in SPAIN stays mainly in the plain";
+        let myArr1 = text6.match(/ain/g);
+        console.log(myArr1);
+
+        // global and case sensitive
+        let text7= "The rain in SPAIN stays mainly in the plain";
+        let myArr2 = text7.match(/ain/gi);
+        console.log(myArr2);
+
+        //MatchAll()
+        let text8= "I love cats. Cats are very easy to love. Cats are very popular."
+        let iterator = text8.matchAll(/Cats/gi);
+        console.log(iterator);
+
+        //Includes()
+        let text9= "The rain in SPAIN stays mainly in the plain";
+        let my = text9.includes("Spain");
+        console.log(my);
+        //StratsWith
+        let text10 = "The rain in SPAIN stays mainly in the plain";
+        let my1 = text10.startsWith("The");
+        console.log(my1);
+        //EndsWith
+        let text11 = "The rain in SPAIN stays mainly in the plain";
+        let my2 = text11.endsWith("SPAIN", 17);
+        console.log(my2);
+
+        //Back-Tics
+        let text12 = `hello jug!`;
+        console.log(text12);
+
+        //interpolation
+        let firstname = "Jug";
+        let lastname = "HandHook";
+        let text13 = `Hey ${firstname}, ${lastname}!`;
+        console.log(text13);
+
+        let price =100;
+        let cost = 200;
+        let total = `Total: ${(price + cost)}`;
+        console.log(total);
+    </script>
+</body>
+</html>

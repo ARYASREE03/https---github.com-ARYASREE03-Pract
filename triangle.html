@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let side1 = parseInt(prompt("side1"))
+        let side2 = parseInt(prompt("side2"))
+        let side3 = parseInt(prompt("side3"))
+        if(side1 === side2 && side2 === side3){
+            console.log("its an equlateral triangle!!")
+        }
+        else if(side1 === side2 || side2 === side3 || side1 === side3){
+            console.log("its an isoseles triangle!!")
+        }
+        else{
+            console.log("its an scalene triangle!!")
+        }
+    </script>
+</body>
+</html>
